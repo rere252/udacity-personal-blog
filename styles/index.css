@@ -7,7 +7,7 @@ body {
   font-family: "Roboto", sans-serif;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 3rem 1fr 2rem;
+  grid-template-rows: 4rem 1fr 2rem;
   grid-template-areas:
     "nav  nav  nav  nav  nav"
     "card card card card about"
@@ -27,7 +27,8 @@ body {
 }
 
 .header-nav > a {
-  font-weight: 300;
+  font-weight: 200;
+  font-size: 1.5rem;
   color: #fff;
   text-decoration: none;
   margin: 0 1rem 0;
@@ -46,7 +47,12 @@ body {
 /* Footer */
 footer {
   grid-area: ft;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #353535;
+  color: #fff;
+  font-weight: 200;
 }
 
 /*
