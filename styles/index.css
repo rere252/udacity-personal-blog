@@ -1,0 +1,55 @@
+/* Main body */
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #474747;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 3rem 1fr 2rem;
+  grid-template-areas:
+    "nav  nav  nav  nav  nav"
+    "card card card card about"
+    "ft   ft   ft   ft   ft";
+}
+
+/* Header navigation bar */
+.header-nav {
+  grid-area: nav;
+  background: #353535;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2rem;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.47);
+}
+
+.header-nav > a {
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem 0;
+}
+
+/* Content card */
+.card {
+  grid-area: card;
+}
+
+/* About the author */
+.about {
+  grid-area: about;
+}
+
+/* Footer */
+footer {
+  grid-area: ft;
+  background: #353535;
+}
+
+/*
+#FFF6D4
+#52FF36
+*/
