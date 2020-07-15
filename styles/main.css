@@ -12,6 +12,7 @@ body {
   font-family: "Roboto", sans-serif;
   display: grid;
   grid-template-rows: 64px 1fr 32px;
+  overflow-x: hidden;
 }
 
 /* Header navigation bar */
