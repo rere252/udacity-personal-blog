@@ -33,6 +33,7 @@ body {
 .index-card-text {
   font-size: 2rem;
   font-weight: 200;
+  margin-bottom: 0;
 }
 
 .index-card-button {
