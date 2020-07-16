@@ -10,7 +10,7 @@ h2 {
   font-size: 1.5rem;
 }
 
-/* Main body */
+/* Posts body */
 body {
   grid-template-columns: 0.5fr 3fr 0.5fr;
   grid-template-areas:
