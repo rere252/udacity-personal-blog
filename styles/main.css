@@ -58,7 +58,7 @@ footer {
 
 /* Bigger desktops */
 @media (min-width: 1600px) {
-  body {
-    font-size: 24px;
+  html {
+    font-size: 20px;
   }
 }
