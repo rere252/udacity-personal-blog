@@ -3,28 +3,35 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
     <link href="styles/posts.css" rel="stylesheet">
     <title>Rene's Blog</title>
   </head>
   <body>
     <nav class="header-nav">
-      <a href="./">Home</a>
-      <a href="./posts.html">Posts</a>
+      <ul class="header-nav__list">
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="./">Home</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="./posts.html">Posts</a>
+        </li>
+      </ul>
     </nav>
     <article class="post-card">
-      <div class="post-card-content">
-        <h1 class="post-card-title">That's One Impressive Title!</h1>
-        <div class="post-card-meta">
-          <img class="avatar-meta" src="./assets/img/avatar.jpg" alt="Avatar of the site's author, a slightly balding 27 year old male on a cherry toned background">
-          <span>Rene</span>
+      <div class="post-card__content">
+        <h1>That's One Impressive Title!</h1>
+        <div class="post-card__meta">
+          <img class="avatar-meta post-card__meta__item" src="./assets/img/avatar.jpg" alt="Avatar of the site's author, a slightly balding 27 year old male on a cherry toned background">
+          <span class="post-card__meta__item">Rene</span>
           <i class="icon-calendar"></i>
-          <span>July 15, 2020</span>
-          <i class="icon-linkedin-rect"></i>
-          <i class="icon-facebook-rect"></i>
-          <i class="icon-twitter-bird"></i>
+          <span class="post-card__meta__item">July 15, 2020</span>
+          <i class="icon-linkedin-rect post-card__meta__item"></i>
+          <i class="icon-facebook-rect post-card__meta__item"></i>
+          <i class="icon-twitter-bird post-card__meta__item"></i>
         </div>
-        <figure class="post-card-figure">
-          <img class="post-card-image"
+        <figure class="post-card__figure">
+          <img class="post-card__image"
             sizes="(max-width: 2560px) 100vw, 2560px"
             srcset="
               ./assets/img/aurora/aurora_n3cgqo_c_scale,w_200.jpg 200w,
@@ -39,11 +46,11 @@
               ./assets/img/aurora/aurora_n3cgqo_c_scale,w_2560.jpg 2560w"
             src="./assets/img/aurora/aurora_n3cgqo_c_scale,w_2560.jpg"
             alt="Green Northern Lights in purple sky">
-          <figcaption>
-            Northern Lights in Varbla. Author: <a href="https://commons.wikimedia.org/wiki/User:KristianPikner" target="_blank">Kristian Pikner</a>
+          <figcaption class="post-card__figcaption">
+            Northern Lights in Varbla. Author: <a class="post-card__link" href="https://commons.wikimedia.org/wiki/User:KristianPikner" target="_blank">Kristian Pikner</a>
           </figcaption>
         </figure>
-        <div class="post-card-text">
+        <div class="post-card__main post-card__text">
           <h2>Aenean massa</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -67,18 +74,18 @@
           </p>
         </div>
       </div>
-      <div class="post-card-author">
+      <div class="post-card__author">
         <img class="avatar" src="./assets/img/avatar.jpg" alt="Avatar of the site's author, a slightly balding 27 year old male on a cherry toned background">
-        <div class="post-card-author-summary">
-          <h1>Rene</h1>
-          <h2>Software Developer</h2>
-          <h3>Based in Tartu, Estonia</h3>
-          <a class="icon-linkedin-rect social-author"
+        <div>
+          <div class="h1-like">Rene</div>
+          <div class="h2-like">Software Developer</div>
+          <div class="h3-like">Based in Tartu, Estonia</div>
+          <a class="post-card__author__link icon-linkedin-rect social-author"
           href="https://www.linkedin.com/in/renejuuse/"
           target="_blank"></a>
         </div>
-        <div class="post-card-author-extra">
-          <h1>About the Author</h1>
+        <div class="post-card__author__extra post-card__text">
+          <div class="h1-like">About the Author</div>
           <p>
             Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.
           </p>

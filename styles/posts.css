@@ -1,12 +1,15 @@
 @import url("main.css");
+@import url("fontello.css");
+@import url("general.css");
 
 /* General purpose elements */
-
-h1 {
+h1,
+.h1-like {
   font-size: 2rem;
 }
 
-h2 {
+h2,
+.h2-like {
   font-size: 1.5rem;
 }
 
@@ -31,18 +34,18 @@ body {
   margin: 1.6rem 0 1.6rem;
 }
 
-.post-card-content {
+.post-card__content {
   padding: 16px;
 }
 
-.post-card-meta {
+.post-card__meta {
   display: flex;
   align-items: center;
   font-size: 1rem;
   font-weight: 200;
 }
 
-.post-card-meta > * {
+.post-card__meta__item {
   margin-right: 0.25rem;
 }
 
@@ -57,39 +60,39 @@ body {
   border-radius: 18px;
 }
 
-.post-card-figure {
+.post-card__figure {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 0.5rem;
 }
 
-.post-card-image {
+.post-card__image {
   width: 100vw;
   align-self: center;
 }
 
-.post-card figcaption {
+.post-card__figcaption {
   margin-top: 0.25rem;
   align-self: flex-end;
   font-weight: 200;
 }
 
-.post-card a {
+.post-card__link {
   text-decoration: underline;
   color: white;
 }
 
-.post-card-text {
+.post-card__main {
   margin: 0 1rem 0;
 }
 
-.post-card-text p {
+.post-card__text {
   font-weight: 300;
   font-size: 1rem;
 }
 
-.post-card-author {
+.post-card__author {
   background: #52ff36;
   border-radius: 0 0 25px 25px;
   padding: 1.5rem 3rem;
@@ -97,16 +100,15 @@ body {
   color: #000;
 }
 
-.post-card-author > *:not(:last-child) {
+.post-card__author > *:not(:last-child) {
   margin-right: 1rem;
 }
 
-.post-card-author a {
+.post-card__author__link {
   color: #000;
 }
 
-.post-card-author-extra {
-  font-weight: 300;
+.post-card__author__extra {
   margin-left: 2rem;
 }
 
@@ -118,11 +120,11 @@ body {
     margin-bottom: 0.8rem;
   }
 
-  .post-card-author {
+  .post-card__author {
     flex-direction: column;
   }
 
-  .post-card-author-extra {
+  .post-card__author__extra {
     margin: 2rem 0 0;
   }
 }

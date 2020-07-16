@@ -3,17 +3,24 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
     <link href="styles/index.css" rel="stylesheet">
     <title>Rene's Blog</title>
   </head>
   <body>
     <nav class="header-nav">
-      <a href="./">Home</a>
-      <a href="./posts.html">Posts</a>
+      <ul class="header-nav__list">
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="./">Home</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="./posts.html">Posts</a>
+        </li>
+      </ul>
     </nav>
     <article class="index-card">
-      <h1 class="index-card-title">That's One Impressive Title!</h1>
-      <img class="index-card-banner"
+      <h1 class="index-card__title">That's One Impressive Title!</h1>
+      <img class="index-card__banner"
         sizes="(max-width: 2800px) 100vw, 2800px"
         srcset="
         ./assets/img/aurora-banner/aurora-banner_tcad5j_c_scale,w_200.jpg 200w,
@@ -28,23 +35,23 @@
         src="./assets/img/aurora-banner/aurora-banner_tcad5j_c_scale,w_2800.jpg" 
         alt="Green aurora in purple sky">
       <blockquote>
-        <p class="index-card-text">
+        <p class="index-card__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
       </blockquote>
-      <a class="index-card-button" href="./posts.html">read the post</a>
+      <a class="index-card__button" href="./posts.html">read the post</a>
     </article>
     <div class="sidebar">
       <img class="avatar" src="./assets/img/avatar.jpg" alt="Avatar of the site's author, a slightly balding 27 year old male on a cherry toned background">
-      <h1>Rene Juuse</h1>
-      <h2>Software Developer</h2>
-      <h3>Based in Tartu, Estonia</h3>
+      <div class="h1-like">Rene Juuse</div>
+      <div class="h2-like">Software Developer</div>
+      <div class="h3-like">Based in Tartu, Estonia</div>
       <a class="icon-linkedin-rect social-author"
         href="https://www.linkedin.com/in/renejuuse/"
         target="_blank"></a>
-      <div id="latest-posts">
-        <h3>Latest Posts:</h3>
-        <ul id="posts-list">
+      <div class="latest-posts">
+        <div class="h3-like">Latest Posts:</div>
+        <ul class="latest-posts__list">
           <li><a href="./posts.html">That's One Impressive Title!</a></li>
           <li><a href="./">Some post long #2</a></li>
           <li><a href="./">Some post even longer #3</a></li>

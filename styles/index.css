@@ -1,4 +1,6 @@
 @import url("main.css");
+@import url("fontello.css");
+@import url("general.css");
 
 /* Index body */
 body {
@@ -20,22 +22,22 @@ body {
   margin: 1.6rem 1.6rem 1.6rem 0;
 }
 
-.index-card-banner {
+.index-card__banner {
   margin: 16px 32px 0 0;
   width: 100%;
   max-height: 18vh;
 }
 
-.index-card-title {
+.index-card__title {
   margin: 16px 0 0 16px;
 }
 
-.index-card-text {
+.index-card__text {
   font-size: 2rem;
   font-weight: 200;
 }
 
-.index-card-button {
+.index-card__button {
   align-self: flex-end;
   border-radius: 0;
   border: 0;
@@ -68,12 +70,12 @@ body {
   align-self: flex-end;
 }
 
-#latest-posts {
+.latest-posts {
   margin-top: auto;
   margin-bottom: auto;
 }
 
-#posts-list {
+.latest-posts__list {
   margin-top: 0.5rem;
   padding: 0;
   list-style-type: none;
@@ -107,7 +109,7 @@ body {
     align-self: flex-start;
   }
 
-  #latest-posts {
+  .latest-posts {
     margin-top: 2rem;
     margin-bottom: 0;
   }

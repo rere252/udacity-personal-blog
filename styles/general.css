@@ -1,20 +1,26 @@
 /* General purpose elements */
 h1,
 h2,
-h3 {
+h3,
+.h1-like,
+.h2-like,
+.h3-like {
   font-weight: 200;
   margin: 0;
 }
 
-h1 {
+h1,
+.h1-like {
   font-size: 3rem;
 }
 
-h2 {
+h2,
+.h2-like {
   font-size: 2rem;
 }
 
-h3 {
+h3,
+.h3-like {
   font-size: 1rem;
 }
 
