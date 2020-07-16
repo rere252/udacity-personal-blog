@@ -15,7 +15,7 @@
       <div class="post-card-content">
         <h1 class="post-card-title">That's One Impressive Title!</h1>
         <div class="post-card-meta">
-          <img class="avatar-meta" src="assets/avatar.jpg" alt="Avatar of the site's author, a slightly balding 27 year old male on a cherry toned background">
+          <img class="avatar-meta" src="./assets/img/avatar.jpg" alt="Avatar of the site's author, a slightly balding 27 year old male on a cherry toned background">
           <span>Rene</span>
           <i class="icon-calendar"></i>
           <span>July 15, 2020</span>
@@ -24,8 +24,24 @@
           <i class="icon-twitter-bird"></i>
         </div>
         <figure class="post-card-figure">
-          <img class="post-card-image" src="assets/aurora.jpg" alt="Green Northern Lights in purple sky">
-          <figcaption>Northern Lights in Varbla. Author: <a href="https://commons.wikimedia.org/wiki/User:KristianPikner" target="_blank">Kristian Pikner</a></figcaption>
+          <img class="post-card-image"
+            sizes="(max-width: 2560px) 100vw, 2560px"
+            srcset="
+              ./assets/img/aurora/aurora_n3cgqo_c_scale,w_200.jpg 200w,
+              ./assets/img/aurora/aurora_n3cgqo_c_scale,w_902.jpg 902w,
+              ./assets/img/aurora/aurora_n3cgqo_c_scale,w_1280.jpg 1280w,
+              ./assets/img/aurora/aurora_n3cgqo_c_scale,w_1593.jpg 1593w,
+              ./assets/img/aurora/aurora_n3cgqo_c_scale,w_1841.jpg 1841w,
+              ./assets/img/aurora/aurora_n3cgqo_c_scale,w_2059.jpg 2059w,
+              ./assets/img/aurora/aurora_n3cgqo_c_scale,w_2258.jpg 2258w,
+              ./assets/img/aurora/aurora_n3cgqo_c_scale,w_2447.jpg 2447w,
+              ./assets/img/aurora/aurora_n3cgqo_c_scale,w_2512.jpg 2512w,
+              ./assets/img/aurora/aurora_n3cgqo_c_scale,w_2560.jpg 2560w"
+            src="./assets/img/aurora/aurora_n3cgqo_c_scale,w_2560.jpg"
+            alt="Green Northern Lights in purple sky">
+          <figcaption>
+            Northern Lights in Varbla. Author: <a href="https://commons.wikimedia.org/wiki/User:KristianPikner" target="_blank">Kristian Pikner</a>
+          </figcaption>
         </figure>
         <div class="post-card-text">
           <h2>Aenean massa</h2>
@@ -52,7 +68,7 @@
         </div>
       </div>
       <div class="post-card-author">
-        <img class="avatar" src="assets/avatar.jpg" alt="Avatar of the site's author, a slightly balding 27 year old male on a cherry toned background">
+        <img class="avatar" src="./assets/img/avatar.jpg" alt="Avatar of the site's author, a slightly balding 27 year old male on a cherry toned background">
         <div class="post-card-author-summary">
           <h1>Rene</h1>
           <h2>Software Developer</h2>
