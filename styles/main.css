@@ -3,6 +3,7 @@
 @import url("general.css");
 
 /* Main body without grid-areas*/
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -45,4 +46,19 @@ footer {
   background: #353535;
   color: #fff;
   font-weight: 200;
+  padding: 0.25rem;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  body {
+    grid-template-rows: 4rem repeat(3, min-content);
+  }
+}
+
+/* Bigger desktops */
+@media (min-width: 1600px) {
+  body {
+    font-size: 24px;
+  }
 }
