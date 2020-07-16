@@ -11,7 +11,7 @@ body {
   background: #474747;
   font-family: "Roboto", sans-serif;
   display: grid;
-  grid-template-rows: 64px 1fr 32px;
+  grid-template-rows: 4rem 1fr min-content;
   overflow-x: hidden;
 }
 
@@ -41,7 +41,7 @@ footer {
   grid-area: ft;
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   background: #353535;
   color: #fff;
   font-weight: 200;
